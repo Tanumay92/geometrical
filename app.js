@@ -1,7 +1,7 @@
 module.exports.circlearea = radius => Math.PI*radius*radius;
 module.exports.circleperimetar = radius => 2*Math.PI*radius;
 
-module.exports.rectangleperimeter = type,length,width => {
+module.exports.rectangleperimeter = (type,length,width) => {
     if(type == 'square') {
         if(length != width){
             console.error('Height and width must be same!');
@@ -17,7 +17,7 @@ module.exports.rectangleperimeter = type,length,width => {
     }
 }
 
-module.exports.rectanglearea = type,length,width => {
+module.exports.rectanglearea = (type,length,width) => {
     if(type == 'square') {
         if(length != width){
             console.error('Height and width must be same!');
@@ -33,7 +33,7 @@ module.exports.rectanglearea = type,length,width => {
     }
 }
 
-module.exports.trianglearea = base,height => {
+module.exports.trianglearea = (base,height) => {
     return base * height;
 } 
 
